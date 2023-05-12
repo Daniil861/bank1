@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Bank1"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_welcome.htm',{})
+		<div class="wrapper__main main">
+			<div class="main__body">
+				<div class="main__app app-main">
+					<div class="app-main__body">
+						<div data-tabs data-tabs-animate="250" class="app-main__tabs">
+							<nav data-tabs-titles class="app-main__navigation">
+								<button type="button" class="app-main__title _tab-active">
+									<p>Наличные</p>
+									<img src="@img/icons/tab-1.png" alt="Icon">
+								</button>
+								<button type="button" class="app-main__title">
+									<p>Кредитные</p>
+									<img src="@img/icons/tab-2.png" alt="Icon">
+								</button>
+								<button type="button" class="app-main__title">
+									<p>Дебетовые</p>
+									<img src="@img/icons/tab-3.png" alt="Icon">
+								</button>
+							</nav>
+							<div data-tabs-body class="app-main__content">
+								<div class="app-main__inner">
+									<div class="app-main__cash cash">
+										<div class="cash__body">
+											<div class="cash__header header">
+												<div class="header__body">
+													<p>
+														Кредиты Наличными
+													</p>
+												</div>
+											</div>
+											<div class="cash__items">
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-19">
+															<p>
+																Кредит наличными
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 4% годовых
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 7,5 млн ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-3.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 1 до 5 лет
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="alfacash"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-19">
+															<p>
+																Кредит наличными
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 3,9% годовых
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 30 млн ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-3.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 1 до 15 лет
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="tincash"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-19">
+															<p>
+																Кредит наличными
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 4% годовых
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 7 млн ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/cash/cash-icon-3.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 1 до 5 лет
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="gazcash"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="app-main__inner">
+									<div class="app-main__cash cash">
+										<div class="cash__body">
+											<div class="cash__header header">
+												<div class="header__body">
+													<p>
+														Кредитные Карты
+													</p>
+												</div>
+											</div>
+											<div class="cash__items">
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-12">
+															<p>
+																Кредитная карта с целым годом без %
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-1.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 50 тыс. ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Год без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="alfacreditcard"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-17 _font-uppercase">
+															<p>
+																Кредитная карта
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-2.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 700 тыс. ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Год без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="tincreditcard"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-14 _font-uppercase">
+															<p>
+																Кредитная карта 180 дней без %
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-3.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 50 тыс. ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			180 дней без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="gaz180"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-15 _font-uppercase">
+															<p>
+																КРЕДИТНАЯ КАРТА 111 ДНЕЙ БЕЗ %
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-4.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 1 млн ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			111 дней без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="mts111days"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-16 _font-uppercase">
+															<p>
+																КРЕДИТНАЯ КАРТА WEEKEND
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-5.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 1 млн ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			до 51 дня без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="mtscreditweekend"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-18 _font-uppercase">
+															<p>
+																КРЕДИТНАЯ КАРТА ZERO
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-6.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 150 тыс. ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			до 51 дня без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="mtszero"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-18 _font-uppercase">
+															<p>
+																120 дней на максимум
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-7.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 1,5 млн ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			120 дней без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="ural120days"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-15 _font-uppercase">
+															<p>
+																Кредитная карта с кешбэком
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-8.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 1,5 млн ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			62 дня без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="uralcashback"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-14 _font-uppercase">
+															<p>
+																Премиальная кредитная карта
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/credit/credit-9.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			До 1,5 млн ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/credit/credit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			4 месяца без %
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="tinplatinum"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="app-main__inner">
+									<div class="app-main__cash cash">
+										<div class="cash__body">
+											<div class="cash__header header">
+												<div class="header__body">
+													<p>
+														Дебетовые Карты
+													</p>
+												</div>
+											</div>
+											<div class="cash__items">
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-19">
+															<p>
+																Дебетовая Альфа-Карта
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-1.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Бесплатная всегда
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк до 100%
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="alfadebit"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-19">
+															<p>
+																Дебетовая Карта Black
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-2.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Бесплатная всегда
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк до 30%
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="tinblack"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-19">
+															<p>
+																Дебетовая Карта Детская
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-3.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 0 рублей
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк от 1%
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="tinjunior"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-18">
+															<p>
+																Дебетовая Карта AliExpress
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-4.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 0 рублей
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк до 30%
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="tinali"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-20">
+															<p>
+																Дебетовая Карта Магнит
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-5.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 0 рублей
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк до 4%
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="tinmagnit"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-20">
+															<p>
+																Дебетовая Карта Lamoda
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-6.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 0 рублей
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк до 4%
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="tinmoda"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-21">
+															<p>
+																Дебетовая Карта Умная
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-7.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Бесплатная всегда
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк до 100%
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="gazmir"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-19">
+															<p>
+																Дебетовая Карта UnionPay
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-8.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Бесплатная всегда
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк до 15 тыс. ₽
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="gazunion"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="cash__item item-main">
+													<div class="item-main__body">
+														<div class="item-main__title _fz-16">
+															<p>
+																Дебетовая Карта МИР Weekend
+															</p>
+														</div>
+														<div class="item-main__actions">
+															<div class="item-main__image">
+																<img src="@img/debit/debit-9.png" alt="Image">
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-1.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			От 0 рублей
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="item-main__block block-item-main">
+																<div class="block-item-main__body">
+																	<div class="block-item-main__icon">
+																		<img src="@img/debit/debit-icon-2.svg" alt="Icon">
+																	</div>
+																	<div class="block-item-main__text">
+																		<p>
+																			Кэшбэк до 10%
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="item-main__button-box">
+															<button type="button" data-id="mtsweekend"
+																class="item-main__button"><span>Оформить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

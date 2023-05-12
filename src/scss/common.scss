@@ -1,0 +1,247 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 57px;
+
+	background-color: $greenColor;
+	border-radius: 13px;
+
+	transition: transform 0.3s ease 0s;
+
+	&:active {
+		transform: translateY(2px);
+	}
+
+	span {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: math.div(19, 16);
+		text-transform: uppercase;
+
+		color: #ffffff;
+	}
+	@media (min-width: 700px) and (min-height: 700px) {
+		height: 90px;
+		span {
+			font-size: 26px;
+		}
+	}
+}
+
+.welcome {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 11;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	min-height: 100vh;
+
+	background-image: url("@img/main/bg.png");
+	background-position: 40% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	overflow: hidden;
+	transition: all 0.3s ease 0.3s;
+	p {
+		font-weight: 700;
+		font-size: 23px;
+		line-height: math.div(28, 23);
+
+		color: #ffffff;
+		padding-bottom: 50px;
+	}
+
+	&._hide {
+		transform: translateY(-20px);
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 11;
+
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	min-height: 100svh;
+
+	background-image: $bgMainColor;
+
+	overflow: hidden;
+	transition: all 0.3s ease 0.3s;
+	&__block-acces {
+		padding-top: 40px;
+		padding-inline: 20px;
+	}
+
+	&__acces {
+	}
+
+	&__button-box {
+		position: absolute;
+		z-index: 4;
+		width: 95%;
+		bottom: 80px;
+		left: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// .preloader__button
+
+	&__button {
+		width: 217px;
+		height: 79px;
+
+		border-radius: 10px;
+	}
+
+	// .preloader__backgrounds
+
+	&__backgrounds {
+	}
+
+	&._hide {
+		top: -20%;
+		opacity: 0;
+		visibility: hidden;
+		transition-delay: 0;
+	}
+}
+
+.acces-preloader {
+	position: relative;
+	z-index: 3;
+
+	display: flex;
+	flex-direction: column;
+
+	max-height: 100vh;
+
+	padding-bottom: 150px;
+
+	overflow: auto;
+
+	&._hide {
+		display: none;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: math.div(24, 20);
+		text-transform: uppercase;
+
+		color: #ffffff;
+
+		margin-bottom: 20px;
+	}
+
+	// .acces-preloader__text
+
+	&__text {
+		padding-bottom: 12px;
+	}
+}
+
+.text-pre {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: math.div(19, 16);
+	text-transform: uppercase;
+
+	color: #ffffff;
+
+	@media (min-width: 700px) and (min-height: 700px) {
+		font-size: 22px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+	}
+}
+
+.text {
+	font-size: 23px;
+	line-height: math.div(28, 23);
+
+	color: #ffffff;
+
+	@media (min-width: 700px) and (min-height: 700px) {
+		font-size: 28px;
+	}
+}
+
+.title {
+	font-weight: 600;
+	font-size: 26px;
+	line-height: math.div(31, 26);
+
+	color: #ffffff;
+
+	@media (min-width: 700px) and (min-height: 700px) {
+		font-size: 32px;
+	}
+}
+
+//========================================================================================================================================================
+.score {
+	&._no-money {
+		animation: no-money 0.7s ease 2;
+	}
+	&._delete-money {
+		animation: delete-money 0.7s ease;
+	}
+	&._anim-add-money {
+		animation: add-money 0.5s ease 3;
+	}
+}
+
+.icon-anim {
+	&._anim-icon-jump {
+		animation: jump_icon 5s ease;
+	}
+	&._anim-icon-scale {
+		animation: scale_icon 0.5s ease 2;
+	}
+	&._anim-icon-rotate {
+		animation: rotate_icon 1.5s ease-out 1;
+	}
+	&._anim-icon-rotate-2 {
+		animation: rotate_icon-2 1.5s ease 1;
+	}
+}
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-drct {
+	display: flex;
+	flex-direction: column;
+}
+
+[type="button"] {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	transition: all 0.3s ease 0s;
+
+	&:active {
+		transform: translateY(2px);
+	}
+}
+//========================================================================================================================================================
