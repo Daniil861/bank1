@@ -24,7 +24,7 @@ import * as flsFunctions from "./files/functions.js";
 
 /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
 /* (i) необходимо для корректного отображения webp из css  */
-flsFunctions.isWebp();
+// flsFunctions.isWebp();
 /* Добавление класса touch для HTML если браузер мобильный */
 // flsFunctions.addTouchClass();
 /* Добавление loaded для body после полной загрузки страницы */
@@ -60,7 +60,7 @@ flsFunctions.tabs();
 Документация по работе в шаблоне:
 Сниппет (HTML): pl
 */
-import './libs/popup.js'
+// import './libs/popup.js'
 
 /*
 Модуль параллакса мышью
@@ -190,4 +190,5 @@ import './libs/popup.js'
 /* Подключаем файлы со своим кодом */
 import "./files/script.js";
 import "./files/events.js";
+import "./files/modal.js";
 //============================================================================================================================================================================================================================================
